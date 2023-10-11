@@ -7,109 +7,121 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<div class="main">
+    <div class="main">
 
-    <header>
-        <div>
-            <h1>Calculadora Geométrica</h1>
-        </div>
-    </header>
-
-    <main>
-        <div class="triangulo">
-            <h2>Calcular área do Triangulo</h2>
-
-            <div>
-                <p>valor da base</p>
-                <input type="number" id="valorBaseDoTriangulo">
-                <br><br>
-                <p>valor da altura</p>
-                <input type="number" id="valorAlturaDoTriangulo">
-<br><br>
-
-                <button id="calcularTriangulo">Calcular</button>
-
-                <h3>O resultado do valor do Triangulo é <span id="resultadoTriangulo"></span></h3>
-            </div>
-        </div>
-
-        <div class="retangulo">
-
-            <h2>Calcular área do Retangulo</h2>
-
-            <div>
-                <p>valor da base</p>
-                <input type="number" id="valorBaseDoRetangulo">
-                <br><br>
-                <p>valor da altura</p>
-                <input type="number" id="valorAlturaDoRetangulo">
-<br><br>
-
-                <button id="calcularRetangulo">Calcular</button>
-
-                <h3>O resultado do valor do Triangulo é <span id="resultadoRetangulo"></span></h3>
-            </div>
-
-        </div>
-
-        <div class="quadrado">
-
-            <h2>Calcular área do Quadrado</h2>
-
-            <div>
-                <p>valor do lado</p>
-                <input type="number" id="valorDoLado">
+        <header>
+            <div class="div-header">
+                <div class="div-h1">
+                    <h1>Calculadora Geométrica</h1>
+                </div>
                 
-<br><br>
-                <button id="calcularQuadrado">Calcular</button>
-
-                <h3>O resultado do valor do Quadrado é <span id="resultadoQuadrado"></span></h3>
+                    <div class="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="850" height="6" viewBox="0 0 856 6" fill="none">
+                        <path d="M3 3H853" stroke="url(#paint0_linear_1_87)" stroke-width="6" stroke-linecap="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_1_87" x1="3.00479" y1="4.50066" x2="852.995" y2="4.4968" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6139D8" stop-opacity="0"/>
+                        <stop offset="0.505208" stop-color="#6139D8"/>
+                        <stop offset="0.95739" stop-color="#6139D8" stop-opacity="0"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    </div>
+                
             </div>
 
+        </header>
+
+        <div class="teste">
+            <main>
+                <div class="triangulo-retangulo">
+                    <h1 class="h1">Calcular área do triângulo</h1>
+                    <div class="Inputs1-2">
+                        <div class="valor-base-T-R">
+                            <p class="paragrafo">Valor da base:</p>
+                            <input type="number" id="valorBaseT">
+                        </div>
+                        <div class="valor-altura-T-R">
+                            <p class="paragrafo">Valor da altura:</p>
+                            <input type="number" id="valorAlturaT">
+                        </div>
+            
+                    </div>
+                    <p class="paragrafo">O resultado do valor do triângulo é</p>
+                    <div class="resultado-calcular1-2">
+                        <span class="pResultado" id="resultadoT"></span>
+                        <button id="calcularT">Calcular</button>
+                    </div>
+                </div>
+            
+            <br><br><br><br>
+                <div class="triangulo-retangulo">
+                    <h1 class="h1">Calcular área do retângulo</h1>
+                    <div class="Inputs1-2">
+                        <div class="valor-base-T-R">
+                            <p class="paragrafo">Valor da base:</p>
+                            <input type="number" id="valorBaseR">
+                        </div>
+                        <div class="valor-altura-T-R">
+                            <p class="paragrafo">Valor da altura:</p>
+                            <input type="number" id="valorAlturaR">
+                        </div>
+            
+                    </div>
+                    <p class="paragrafo">O resultado do valor do retângulo é</p>
+                    <div class="resultado-calcular1-2">
+                        <span class="pResultado" id="resultadoR"></span>
+                        <button id="calcularR">Calcular</button>
+                    </div>
+                </div>
+                <div class="quadrado-circulo">
+                    <h1 class="h1">Calcular área do quadrado</h1>
+                    <p class="paragrafo">Valor do lado:</p>
+                    <div class="valorLado-button">
+                        <input type="number" class="input3" id="ladoQ">
+                        <button class="button3" id="calcularQ">Calcular</button>
+                    </div>
+                    <p class="paragrafo">O resultado do valor do quadrado é</p>
+                    <span class="pResultado3" id="resultadoQ"></span>
+                </div>
+                <div class="trapezio">
+                    <h1 class="h1">Calcular área do trapézio</h1>
+                    <div class="Inputs6-7-8">
+                        <div class="valor-baseMaior">
+                            <p>Valor da base maior:</p>
+                            <input type="number" id="valorBaseMaior">
+                        </div>
+                        <div class="valor-baseMenor">
+                            <p>Valor da base menor:</p>
+                            <input type="number" id="valorBaseMenor">
+                        </div>
+                        <div class="valor-altura4">
+                            <p>Valor da altura:</p>
+                            <input type="number" id="valorAlturaTrapezio">
+                        </div>
+            
+                    </div>
+                    <p>O resultado do valor do trapézio é</p>
+                    <div class="resultado-calcular1-2">
+                        <span class="pResultado" id="resultadoTrapezio"></span>
+                        <button id="calcularTrapezio">Calcular</button>
+                    </div>
+                </div>
+                <div class="quadrado-circulo">
+                    <h1 class="h1">Calcular área do círculo</h1>
+                    <p class="paragrafo">Valor do raio:</p>
+                    <div class="valorLado-button">
+                        <input type="number" class="input3" id="valorRaio">
+                        <button class="button3" id="calcularRaio">Calcular</button>
+                    </div>
+                    <p class="paragrafo">O resultado do valor do círculo é</p>
+                    <span class="pResultado3" id="resultadoRaio"></span>
+                </div>
+            
+            </main>
         </div>
 
-        <div class="trapezio">
-
-            <h2>Calcular área do Trapezio</h2>
-
-            <div>
-                <p>valor da base maior</p>
-                <input type="number" id="valorBaseMaior">
-                <br><br>
-                <p>valor da base menor</p>
-                <input type="number" id="valorBaseMenor">
-<br><br>
-                <p>valor da altura</p>
-                <input type="number" id="valorDaAlturaDoTrapezio">
-<br><br>
-
-                <button id="calcularTrapezio">Calcular</button>
-
-                <h3>O resultado do valor do Triangulo é <span id="resultadoTrapezio"></span></h3>
-            </div>
-
-        </div>
-
-        <div class="circulo">
-
-            <h2>Calcular área do Circulo</h2>
-
-            <div>
-                <p>valor do raio</p>
-                <input type="number" id="valorDoRaio">        
-                           
-<br><br>
-                <button id="calcularCirculo">Calcular</button>
-
-                <h3>O resultado do valor do Triangulo é <span id="resultadoCirculo"></span></h3>
-            </div>
-
-        </div>
-    </main>
-
-</div>
-
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

@@ -1,56 +1,58 @@
-//TRIANGULO
+//TRIÂNGULO
+ 
+let valorBaseT = document.getElementById('valorBaseT')
+let valorAlturaT = document.getElementById('valorAlturaT')
+let calcularT = document.getElementById('calcularT')
+let resultadoT = document.getElementById('resultadoT')
 
-let valorBaseDoTriangulo = document.getElementById('valorBaseDoTriangulo')
-let valorAlturaDoTriangulo = document.getElementById('valorAlturaDoTriangulo')
-let calcularTriangulo = document.getElementById('calcularTriangulo')
-let resultadoTriangulo = document.getElementById('resultadoTriangulo')
-
-calcularTriangulo.addEventListener('click', function() {
-    resultadoTriangulo.innerHTML = Number(valorBaseDoTriangulo.value) * Number(valorAlturaDoTriangulo.value) / 2
+calcularT.addEventListener('click', () => {
+    resultadoT.innerHTML = (Number(valorBaseT.value) * Number(valorAlturaT.value) / 2).toFixed(2)
 })
 
-//RETANGULO
+//RETÂNGULO
 
-let valorBaseDoRetangulo = document.getElementById('valorBaseDoRetangulo')
-let valorAlturaDoRetangulo = document.getElementById('valorAlturaDoRetangulo')
-let calcularRetangulo = document.getElementById('calcularRetangulo')
-let resultadoRetangulo = document.getElementById('resultadoRetangulo')
+let valorBaseR = document.getElementById('valorBaseR')
+let valorAlturaR = document.getElementById('valorAlturaR')
+let calcularR = document.getElementById('calcularR')
+let resultadoR = document.getElementById('resultadoR')
 
-calcularRetangulo.addEventListener('click', () => {
-    resultadoRetangulo.innerHTML = Number(valorBaseDoRetangulo.value) * Number(valorAlturaDoRetangulo.value)
+calcularR.addEventListener('click', ()=> {
+    resultadoR.innerHTML = Number(valorBaseR.value) * Number(valorAlturaR.value).toFixed(2)
 })
 
-//QUADRADO 
+//QUADRADO
 
-let valorDoLado = document.getElementById('valorDoLado')
-let calcularQuadrado = document.getElementById('calcularQuadrado')
-let resultadoQuadrado = document.getElementById('resultadoQuadrado')
+let ladoQ = document.getElementById('ladoQ')
+let calcularQ = document.getElementById('calcularQ')
+let resultadoQ = document.getElementById('resultadoQ')
 
-calcularQuadrado.addEventListener('click', () => {
-    resultadoQuadrado.innerHTML = Number(valorDoLado.value) * Number(valorDoLado.value)
+calcularQ.addEventListener('click', ()=> {
+    resultadoQ.innerHTML = Number(ladoQ.value) * Number(ladoQ.value).toFixed(2)
 })
 
-//TRAPEZIO
+//TRAPÉZIO 
 
 let valorBaseMaior = document.getElementById('valorBaseMaior')
 let valorBaseMenor = document.getElementById('valorBaseMenor')
-let valorDaAlturaDoTrapezio = document.getElementById('valorDaAlturaDoTrapezio')
-let calcularTrapezio = document.getElementById('calcularTrapezio')
+let valorAlturaTrapezio = document.getElementById('valorAlturaTrapezio')
 let resultadoTrapezio = document.getElementById('resultadoTrapezio')
+let calcularTrapezio = document.getElementById('calcularTrapezio')
 
-calcularTrapezio.addEventListener('click', () => {
-    resultadoTrapezio.innerHTML = ((Number(valorBaseMaior.value) + Number(valorBaseMenor.value)) * Number(valorDaAlturaDoTrapezio.value) / 2).toFixed(2)
+calcularTrapezio.addEventListener('click', ()=> {
+    resultadoTrapezio.innerHTML = ((Number(valorBaseMaior.value) + Number(valorBaseMenor.value)) * Number(valorAlturaTrapezio.value) / 2).toFixed(2)
 })
 
-//CIRCULO
+//CÍRCULO 
 
-let valorDoRaio = document.getElementById('valorDoRaio')
-let calcularCirculo = document.getElementById('calcularCirculo')
-let resultadoCirculo = document.getElementById('resultadoCirculo')
+let valorRaio = document.getElementById('valorRaio')
+let calcularRaio = document.getElementById('calcularRaio')
+let resultadoRaio = document.getElementById('resultadoRaio')
 
-calcularCirculo.addEventListener('click', () => {
-    resultadoCirculo.innerHTML = (Number(valorDoRaio.value) * Number(valorDoRaio.value))  * 3.14
+calcularRaio.addEventListener('click', ()=> {
+    resultadoRaio.innerHTML = (Number(valorRaio.value) * 3.14).toFixed(2)
 })
+
+
 
 // document.querySelector('form').addEventListener('submit', (event) => {
 //     event.preventDefault()
